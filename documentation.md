@@ -6,7 +6,6 @@ Below is a breakdown of each major directory in
 [https://github.com/destination-earth/DestinE-DataLake-Gallery.git](https://github.com/destination-earth/DestinE-DataLake-Gallery.git)
 and its purpose, followed by a step-by-step tutorial on how to contribute.
 
-
 # Files and Folder Structure (Gallery Repository)
 
 ## 1. `_static/`
@@ -102,7 +101,7 @@ Footer content displayed at the bottom of each page.
 
 Short overview on contributing.
 
-# Gallery Workflows
+# Gallery Workflow
 
 ## `build_myst_page.yml`
 
@@ -112,6 +111,7 @@ Triggered on:
 
 * every push to `main`
 * manual dispatch
+* every 2 hours
 
 Steps:
 
@@ -124,7 +124,7 @@ Steps:
 7. Build HTML
 8. Deploy to GitHub Pages
 
-This workflow builds the **public production gallery**.
+This workflow builds the [public production gallery](https://destination-earth.github.io/DestinE-DataLake-Gallery/)
 
 ---
 
@@ -147,14 +147,14 @@ The form collects:
 Triggered when:
 
 * an issue is closed in the LAB repository, and
-* the actor is an approved maintainer (e.g. `katharinastarzer21`, `koenifra`, etc.)
+* the actor is an approved maintainer
 
 Steps:
 
 1. Save issue body to `issue_body.txt`
 2. Parse the submitted form (`parse_issue.py`)
 3. Clone external repository
-4. Validate all notebooks (YAML metadata etc.)
+4. Validate all notebooks (YAML metadata)
 5. Update `cookbooks.json`
 6. Commit changes to **LAB/staging**
 
@@ -176,7 +176,7 @@ Only PRs whose notebooks pass validation can be merged.
 
 ---
 
-# How to Contribute
+# How to contribute
 
 You can either:
 
@@ -184,7 +184,7 @@ You can either:
 2. Propose a completely new notebook section (external repository).
 
 
-# Adding a Notebook to an Existing Section
+# Adding a notebook to an existing section
 
 ### Step 1: Use the official notebook template
 
@@ -221,7 +221,7 @@ Only maintainers may approve and merge this step.
 The main branch update triggers the public gallery rebuild.
 
 
-# Adding a New Section (External Repository)
+# Adding a new yection (external repository)
 
 If you want to add an entirely new notebook repository:
 
@@ -245,15 +245,15 @@ img/
 
 ### Step 3: Submit your repository via issue form
 
-LAB issue link:
+Open the “Add new cookbook” submission form:
 
-https://github.com/destination-earth/DestinE-DataLake-Lab/issues
+https://github.com/destination-earth/DestinE-DataLake-Lab/issues/new/choose
 
-The form "Add new cookbook" asks for:
+Provide:
 
-* Title of the submission
+* Submision Title
 * Repository URL
-* Short uppercase title for folder naming
+* Short uppercase folder name (used in the gallery structure)
 
 ### Step 4: Maintainer closes the issue
 
