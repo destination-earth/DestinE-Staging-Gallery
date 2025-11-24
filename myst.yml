@@ -1,0 +1,132 @@
+version: 1
+project:
+  title: DEDL Notebook Gallery
+  toc:
+  - file: index.md
+  - title: contribute
+    file: contribute.md
+  - title: HDA
+    file: galleries/HDA.md
+    children:
+    - file: production/HDA/EUM_data/DEDL-HDA-EO.EUM.DAT.METOP.AVHRRL1.ipynb
+      hidden: true
+    - file: production/HDA/EUM_data/DEDL-HDA-EO.EUM.DAT.MSG-1.5.ipynb
+      hidden: true
+    - file: production/HDA/EUM_data/DEDL-HDA-EO.EUM.DAT.MTG.ipynb
+      hidden: true
+    - file: production/HDA/EUM_data/DEDL-HDA-EO.EUM.DAT.SENTINEL-3.OL_1_ERR___.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/ClimateDT-ExtractLocationValues.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/ClimateDT-ParameterPlotter.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/DEDL-HDA-EO.ECMWF.DAT.DT_CLIMATE-Series.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/DEDL-HDA-EO.ECMWF.DAT.DT_CLIMATE.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/DEDL-HDA-EO.ECMWF.DAT.DT_EXTREMES-Series.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/DEDL-HDA-EO.ECMWF.DAT.DT_EXTREMES.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/ExtremeDT-ParameterPlotter.ipynb
+      hidden: true
+    - file: production/HDA/DestinE_Digital_Twins/ExtremeDT-dataAvailability.ipynb
+      hidden: true
+    - file: production/HDA/CDS_data/DEDL-HDA-EO.ECMWF.DAT.REANALYSIS_ERA5_SINGLE_LEVELS.ipynb
+      hidden: true
+    - file: production/HDA/REST/DEDL-HDA-EO.ESA.DAT.SENTINEL-1.L1_GRD.ipynb
+      hidden: true
+    - file: production/HDA/REST/DEDL-HDA-EO.ESA.DAT.SENTINEL-2.MSI.L2A.ipynb
+      hidden: true
+    - file: production/HDA/REST/HDA-REST-Queryables.ipynb
+      hidden: true
+    - file: production/HDA/REST/HDA-REST-full-version.ipynb
+      hidden: true
+    - file: production/HDA/REST/HDA-REST-quick-start.ipynb
+      hidden: true
+    - file: production/HDA/PySTAC/HDA-PyStac-Client.ipynb
+      hidden: true
+    - file: production/HDA/EODAG/HDA-EODAG-full-version.ipynb
+      hidden: true
+    - file: production/HDA/EODAG/HDA-EODAG-quick-start.ipynb
+      hidden: true
+  - title: HOOK
+    file: galleries/HOOK.md
+    children:
+    - file: production/HOOK/DEDL-Hook_access.ipynb
+      hidden: true
+    - file: production/HOOK/DEDL-Hook_data_harvest.ipynb
+      hidden: true
+    - file: production/HOOK/Tutorial.ipynb
+      hidden: true
+  - title: STACK
+    file: galleries/STACK.md
+    children:
+    - file: production/STACK/DEDL_StackService_Dask.ipynb
+      hidden: true
+    - file: production/STACK/STACK-Dask-101.ipynb
+      hidden: true
+    - file: production/STACK/STACK-Python-Client-Dask.ipynb
+      hidden: true
+  - file: galleries_by_tag/tag-access-token.md
+    hidden: true
+  - file: galleries_by_tag/tag-authentication.md
+    hidden: true
+  - file: galleries_by_tag/tag-avhrr.md
+    hidden: true
+  - file: galleries_by_tag/tag-c3s.md
+    hidden: true
+  - file: galleries_by_tag/tag-cluster.md
+    hidden: true
+  - file: galleries_by_tag/tag-core-api.md
+    hidden: true
+  - file: galleries_by_tag/tag-dask.md
+    hidden: true
+  - file: galleries_by_tag/tag-digital-twin.md
+    hidden: true
+  - file: galleries_by_tag/tag-earthkit.md
+    hidden: true
+  - file: galleries_by_tag/tag-ecmwf.md
+    hidden: true
+  - file: galleries_by_tag/tag-eodag.md
+    hidden: true
+  - file: galleries_by_tag/tag-gfm.md
+    hidden: true
+  - file: galleries_by_tag/tag-hda.md
+    hidden: true
+  - file: galleries_by_tag/tag-hook.md
+    hidden: true
+  - file: galleries_by_tag/tag-http-requests.md
+    hidden: true
+  - file: galleries_by_tag/tag-metop.md
+    hidden: true
+  - file: galleries_by_tag/tag-olci.md
+    hidden: true
+  - file: galleries_by_tag/tag-pyaviso.md
+    hidden: true
+  - file: galleries_by_tag/tag-satpy.md
+    hidden: true
+  - file: galleries_by_tag/tag-sentinel-3.md
+    hidden: true
+  - file: galleries_by_tag/tag-seviri.md
+    hidden: true
+  - file: galleries_by_tag/tag-stac.md
+    hidden: true
+  - file: galleries_by_tag/tag-stack.md
+    hidden: true
+  - file: galleries_by_tag/tag-storage.md
+    hidden: true
+  - file: galleries_by_tag/tag-token.md
+    hidden: true
+  - file: galleries_by_tag/tag-workflow.md
+    hidden: true
+site:
+  template: book-theme
+  options:
+    style: _static/custom.css
+    favicon: img/EUMETSAT-icon.ico
+    logo: img/logo_bar.png
+    hide_footer_links: true
+    hide_outline: true
+  parts:
+    footer: footer.md
